@@ -2,10 +2,7 @@
 
 ---
 
-Example plain HTML site using GitLab Pages.
-
-Learn more about GitLab Pages at https://pages.gitlab.io and the official
-documentation https://docs.gitlab.com/ce/user/project/pages/.
+Example of DB programming using MySQLdb for MySQL DB 
 
 ---
 
