@@ -9,6 +9,8 @@ from sqlalchemy import Column, String, Integer, Date
 db = sqlite3.connect(':memory:')
 # https://docs.python.org/3/library/sqlite3.html
 
+help (logging)
+
 cursor = db.cursor()
 print cursor
 
