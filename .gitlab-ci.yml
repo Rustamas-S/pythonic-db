@@ -1,11 +1,21 @@
-image: alpine:latest
+image: "python:2.7"
 
-pages:
-  stage: deploy
+stages:
+  - test
+
+test:
+  variables:
+    MYSQL_DB: car_rental
+    MYSQL_USER: root
+    MYSQL_PASSWORD: 1My_sql!SQL
   script:
-  - echo 'Nothing to do...'
-  artifacts:
-    paths:
-    - public
-  only:
-  - master
+  - cat /etc/apt/sources.list 
+  - uname -a
+  - cp -v /etc/apt/sources.list /etc/apt/sources.list.orig
+  - sed --in-place 's/# deb-src/deb-src/' /etc/apt/sources.list
+  - apt-get -q -y update
+  - cat /etc/apt/sources.list 
+  - apt-get install -y python-dev python-pip 
+  - $(which python) -m pip install --upgrade pip
+  - pip --use-deprecated=legacy-resolver install -r requirements.txt
+  - export DATABASE_URL=mysql://$MYSQL_USER:$MYSQL_PASSWORD@localhost:3306/$MYSQL_DB
