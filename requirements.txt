@@ -1,3 +1,2 @@
-MySQLdb==1.2.5
 SQLAlchemy==1.2.10
 
