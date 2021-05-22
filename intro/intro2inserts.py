@@ -14,7 +14,6 @@ directors = [ ('Frank', 'Darabont', 7),
               ('Christopher', 'Nolan', 9),
               ('David', 'Fincher', 7)]
 
-
 shitf_ids = 25
 movies = movies = [ ('The Shawshank Redemption', 1994, 'Drama', shitf_ids+1, 8),
                     ('The Green Mile', 1999, 'Drama', shitf_ids+1, 6),

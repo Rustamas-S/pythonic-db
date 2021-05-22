@@ -1,4 +1,4 @@
 SQLAlchemy==1.2.10
-sqlite3==0.7
-logging==0.4.9.6
+sqlite3==3.31.1
+logging==0.5.1.2
 
