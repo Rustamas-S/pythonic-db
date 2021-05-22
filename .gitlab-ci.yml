@@ -17,6 +17,5 @@ test:
   - cat /etc/apt/sources.list 
   - apt-get install -y python-dev python-pip 
   - $(which python) -m pip install --upgrade pip
-  - pip install MySQL-python
   - pip --use-deprecated=legacy-resolver install -r requirements.txt
   - export DATABASE_URL=mysql://$MYSQL_USER:$MYSQL_PASSWORD@localhost:3306/$MYSQL_DB

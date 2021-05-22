@@ -4,6 +4,12 @@
 
 Example of DB programming using MySQLdb for MySQL DB 
 
+ (https://www.tutorialspoint.com/python/index.htm)*
+ (https://www.sqlite.org/quickstart.html)*
+ (https://docs.python.org/3/library/sqlite3.html)*
+ (https://pypi.org/project/MySQL-python/)*
+ 
+
 ---
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->

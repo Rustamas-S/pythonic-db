@@ -1,2 +1,4 @@
 SQLAlchemy==1.2.10
+sqlite3
+logging
 
